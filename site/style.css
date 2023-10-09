@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Oswald:wght@500&display=swap');
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url(../site/assets/fonts/Comfortaa-VariableFont_wght.ttf);
+}
+
+body {
+    background: black;
+}
+
+
+h1 {
+    font-family: "Comfortaa";
+    color: green;
+}
