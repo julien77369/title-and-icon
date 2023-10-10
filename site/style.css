@@ -9,8 +9,17 @@ body {
     background: black;
 }
 
+h1:hover {
+    cursor: crosshair;
+    color: cyan;
+}
 
 h1 {
     font-family: "Comfortaa";
     color: green;
+    display: flex;
+    justify-content: space-around;
+    border: 2.5px solid green;
+    margin: 40px;
+    padding: 20px;
 }
