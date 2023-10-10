@@ -6,7 +6,8 @@
 }
 
 body {
-    background: black;
+    background: rgb(0, 0, 0);
+    
 }
 
 h1:hover {
@@ -17,18 +18,90 @@ h1:hover {
 h1 {
     font-family: "Comfortaa";
     color: green;
-    display: flex;
-    justify-content: space-around;
-    border: 2.5px solid green;
-    margin: 40px;
-    padding: 20px;
+    position: absolute;
+    top: 17px;
+    left: 63px;
+    margin: 0px;
+}
+
+.icon {
+    background: green;
+    margin-top: 5px;
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
 }
 
 p {
     color: green;
-    margin: 100px;
-    border: 2.5px solid green;
-    border-radius: 5px;
-    padding: 15px;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    margin: 0px;
     font-family: "Comfortaa";
+    width: 700px;
+}
+
+form {
+    display: grid;
+    position: absolute;
+    height: 75px;
+    top: 350px;
+    left: 145px;
+    margin: 0px;
+    padding: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "li i2"
+    "ta ta"
+    "vi bt";
+}
+
+input, textarea {
+    margin: 5px;
+    bottom: 1px solid green;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: "DMSerif";
+    border-radius: 10px;
+    border: 2.5px solid green;
+}
+
+textarea {
+    grid-area: ta;
+    height: 40px;
+    resize: none;
+}
+
+textarea {
+    grid-area: ta;
+}
+
+#btn-submit {
+    grid-area: bt;
+    text-align: center;
+    cursor: pointer;
+    background: green;
+    transition: 0.2s;
+    width: 100px;
+}
+
+#btn-submit:hover {
+    background: rgb(0, 64, 0);
+    color: black;
+}
+
+.image {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 210px;
+    left: 900px;
+    border: 5px;
+    border-radius: 50px;
+
 }
